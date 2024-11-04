@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "vitest"
+    "test": "vitest",
+    "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "next": "15.0.2",
@@ -15,6 +16,7 @@
     "react-dom": "19.0.0-rc-02c0e824-20241028"
   },
   "devDependencies": {
+    "@storybook/nextjs": "^8.4.1",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1",
     "@types/node": "^20",
@@ -27,6 +29,7 @@
     "eslint-plugin-unused-imports": "^4.1.4",
     "jsdom": "^25.0.1",
     "postcss": "^8",
+    "storybook": "^8.4.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
     "vitest": "^2.1.4"
