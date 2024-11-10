@@ -3,14 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 0 0% 100%;
+  --foreground: 0 0% 9%;
+
+  --primary: 213 75% 53%; /* #1E88E5 */
+  --primary-foreground: 210 20% 98%; /* White for contrast */
+
+  --secondary: 14 86% 64%; /* #FF7043 */
+  --secondary-foreground: 210 20% 98%; /* White for contrast */
+
+  --accent: 141 43% 60%; /* #66BB6A */
+  --accent-foreground: 210 20% 98%; /* White for contrast */
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 20% 98%;
+  --text: 220 8% 20%; /* #333333 */
+  --warning: 0 71% 64%; /* #E53935 */
+  --warning-foreground: 210 20% 98%; /* White for contrast */
+
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+
+  --radius: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+
+    --primary: 213 70% 45%; /* 少し暗めのブルー */
+    --primary-foreground: 210 20% 98%; /* White for contrast */
+
+    --secondary: 14 80% 50%; /* 暗めのオレンジ */
+    --secondary-foreground: 210 20% 98%; /* White for contrast */
+
+    --accent: 141 40% 50%; /* 暗めのグリーン */
+    --accent-foreground: 210 20% 98%; /* White for contrast */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --text: 0 0% 98%; /* 明るいテキストカラー */
+
+    --warning: 0 60% 50%; /* 暗めのレッド */
+    --warning-foreground: 210 20% 98%; /* White for contrast */
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
 }
 
