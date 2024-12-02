@@ -1,9 +1,19 @@
 import { ReactNode } from 'react';
+import { Navigation } from '@/components/ui/navigation';
+import { Footer } from '@/components/ui/footer';
 
-import { LandingLayout as LandingLayoutComponent } from '@/components/layouts/landing-layout';
+type LayoutProps = {
+  children: ReactNode;
+};
 
-const LandingLayout = ({ children }: { children: ReactNode }) => {
-  return <LandingLayoutComponent>{children}</LandingLayoutComponent>;
+const LandingLayout = ({ children }: LayoutProps) => {
+  return (
+    <>
+      <Navigation />
+      {children}
+      <Footer />
+    </>
+  );
 };
 
 export default LandingLayout;
