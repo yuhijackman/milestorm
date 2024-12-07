@@ -1,7 +1,6 @@
-import { Button } from '@/components/ui/button';
-import { MaxWidthWrapper } from '@/components/ui/max-width-wrapper';
 import Image from 'next/image';
-import { FeatureSection } from './_components/feature-section';
+
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
@@ -9,6 +8,9 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { MaxWidthWrapper } from '@/components/ui/max-width-wrapper';
+
+import { FeatureSection } from './_components/feature-section';
 
 const LandingPage = () => {
   return (
@@ -49,19 +51,19 @@ const LandingPage = () => {
       <MaxWidthWrapper className="py-16">
         <section>
           <h2 className="text-3xl font-bold text-center text-wrap mb-6">
-            What's Milestorm?
+            What&apos;s Milestorm?
           </h2>
           <p className="text-xl mb-2 text-center">
             Milestorm is your go-to tool for achieving goals with clarity and
-            precision. Whether it’s a coding interview, language mastery, or
-            certification, Milestorm helps break ambitions into manageable steps
-            with personalized roadmaps.
+            precision. Whether it&apos;s a coding interview, language mastery,
+            or certification, Milestorm helps break ambitions into manageable
+            steps with personalized roadmaps.
           </p>
           <p className="text-xl text-center">
-            You can also explore roadmaps from others who’ve achieved similar
-            goals, gaining insights and strategies to fast-track your progress.
-            With Milestorm, you’re supported by a resourceful community, making
-            your journey to success both guided and inspiring.
+            You can also explore roadmaps from others who&apos;ve achieved
+            similar goals, gaining insights and strategies to fast-track your
+            progress. With Milestorm, you&apos;re supported by a resourceful
+            community, making your journey to success both guided and inspiring.
           </p>
         </section>
       </MaxWidthWrapper>
@@ -70,7 +72,7 @@ const LandingPage = () => {
           <h2 className="text-3xl font-bold text-center text-wrap mb-6 relative">
             What you can do with{' '}
             <u className="relative no-underline after:absolute after:content-[''] after:h-full after:w-[120%] after:bg-smooth-text-underline after:bg-cover after:left-[-10px] after:translate-y-1/2">
-              Milestrom{' '}
+              Milestrom
             </u>
           </h2>
           <FeatureSection />

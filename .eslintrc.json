@@ -3,7 +3,6 @@
   "extends": ["next/core-web-vitals", "next/typescript", "prettier"],
   "plugins": ["unused-imports"],
   "rules": {
-    "camelCase": true,
     "unused-imports/no-unused-imports": "error",
     "import/order": [
       "error",
@@ -21,5 +20,6 @@
         "alphabetize": { "order": "asc", "caseInsensitive": true }
       }
     ]
-  }
+  },
+  "ignorePatterns": ["tailwind.config.ts"]
 }

@@ -1,4 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { Link } from 'lucide-react';
+
 import { Button } from './button';
 
 const meta: Meta<typeof Button> = {
@@ -44,9 +46,9 @@ export const Default: Story = {
   render: (args) => {
     const child =
       args.asChild && typeof args.children === 'string' ? (
-        <a href="/" onClick={(e) => e.preventDefault()}>
+        <Link href="/" onClick={(e) => e.preventDefault()}>
           {args.children}
-        </a>
+        </Link>
       ) : (
         args.children
       );
