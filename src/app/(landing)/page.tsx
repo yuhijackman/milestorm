@@ -34,16 +34,16 @@ const LandingPage = () => {
               <Button>Get Started for Free</Button>
               <Button variant="outline">Watch a Demo</Button>
             </div>
-            <div className="w-[300] h-[300] rounded-full absolute left-[-200px] opacity-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#DED9FF] to-[#EFEAFF]"></div>
+            <div className="w-[300px] h-[300px] rounded-full absolute left-[-200px] opacity-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#DED9FF] to-[#EFEAFF]"></div>
           </div>
           <div className="flex justify-center md:basis-5/12 lg:basis-6/12">
             <Image
               src="/hero-image.svg"
               alt="Unlock Your Potential with a Clear Path to Success"
-              width="700"
-              height="560"
+              width={700}
+              height={560}
               loading="eager"
-              className="w-[400] md:w-full object-cover object-top"
+              className="w-[400px] md:w-full object-cover object-top"
             ></Image>
           </div>
         </section>
@@ -72,7 +72,7 @@ const LandingPage = () => {
           <h2 className="text-3xl font-bold text-center text-wrap mb-6 relative">
             What you can do with{' '}
             <u className="relative no-underline after:absolute after:content-[''] after:h-full after:w-[120%] after:bg-smooth-text-underline after:bg-cover after:left-[-10px] after:translate-y-1/2">
-              Milestrom
+              Milestorm
             </u>
           </h2>
           <FeatureSection />
