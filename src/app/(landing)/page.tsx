@@ -40,6 +40,7 @@ const LandingPage = () => {
               alt="Unlock Your Potential with a Clear Path to Success"
               width="700"
               height="560"
+              loading="eager"
               className="w-[400] md:w-full object-cover object-top"
             ></Image>
           </div>
@@ -133,7 +134,7 @@ const LandingPage = () => {
           </div>
         </section>
       </MaxWidthWrapper>
-      <MaxWidthWrapper className="py-16 bg-brand-50 rounded-xl shadow-md">
+      <MaxWidthWrapper className="py-20 bg-brand-50 rounded-xl shadow-md">
         <section className="flex flex-col justify-center items-center">
           <h2 className="text-3xl font-bold text-center text-wrap mb-8">
             Start your journey with Milestorm

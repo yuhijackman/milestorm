@@ -1,4 +1,3 @@
-import { describe } from 'node:test';
 import { FeatureItems } from './feature-items';
 import { FeatureTabs } from './feature-tabs';
 

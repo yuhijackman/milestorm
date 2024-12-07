@@ -19,7 +19,7 @@ export default meta;
 
 export const CardDemo = () => {
   return (
-    <>
+    <Card>
       <CardHeader>
         <CardTitle>Card Title</CardTitle>
         <CardDescription>Card description goes here.</CardDescription>
@@ -28,10 +28,13 @@ export const CardDemo = () => {
         This is the main content of the card. You can place any content here.
       </CardContent>
       <CardFooter>
-        <button className="bg-blue-500 text-white px-4 py-2 rounded">
+        <button
+          aria-label="Perform action"
+          className="bg-blue-500 text-white px-4 py-2 rounded"
+        >
           Action
         </button>
       </CardFooter>
-    </>
+    </Card>
   );
 };

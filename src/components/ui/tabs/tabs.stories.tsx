@@ -15,20 +15,42 @@ type Story = StoryObj<typeof Tabs>;
 
 export const TabsDemo: Story = {
   render: () => (
-    <Tabs defaultValue="tab1" className="w-full max-w-md">
+    <Tabs
+      defaultValue="overview"
+      className="w-[600px] h-[200px] flex flex-col justify-start items-center"
+      onValueChange={(value) => console.log(`Selected tab: ${value}`)}
+    >
       <TabsList>
-        <TabsTrigger value="tab1">Tab 1</TabsTrigger>
-        <TabsTrigger value="tab2">Tab 2</TabsTrigger>
-        <TabsTrigger value="tab3">Tab 3</TabsTrigger>
+        <TabsTrigger value="overview" aria-label="Project Overview">
+          Overview
+        </TabsTrigger>
+        <TabsTrigger value="tasks" aria-label="Project Tasks">
+          Tasks
+        </TabsTrigger>
+        <TabsTrigger value="timeline" aria-label="Project Timeline">
+          Timeline
+        </TabsTrigger>
       </TabsList>
-      <TabsContent value="tab1">
-        <p>Content for Tab 1</p>
+      <TabsContent value="overview">
+        <div className="space-y-4">
+          <h3 className="text-lg font-medium">Project Overview</h3>
+          <p>Project description and key metrics go here.</p>
+        </div>
       </TabsContent>
-      <TabsContent value="tab2">
-        <p>Content for Tab 2</p>
+      <TabsContent value="tasks">
+        <div className="space-y-4">
+          <h3 className="text-lg font-medium">Project Tasks</h3>
+          <ul className="list-disc pl-5">
+            <li>Task 1: Implementation</li> <li>Task 2: Testing</li>
+            <li>Task 3: Deployment</li>
+          </ul>
+        </div>
       </TabsContent>
-      <TabsContent value="tab3">
-        <p>Content for Tab 3</p>
+      <TabsContent value="timeline">
+        <div className="space-y-4">
+          <h3 className="text-lg font-medium">Project Timeline</h3>
+          <p>Timeline visualization would go here.</p>
+        </div>
       </TabsContent>
     </Tabs>
   ),

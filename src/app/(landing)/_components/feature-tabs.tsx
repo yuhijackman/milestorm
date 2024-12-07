@@ -37,7 +37,12 @@ export const FeatureTabs = ({ tabs }: FeatureTabsProps) => {
                 <p className="text-xl">{tab.description}</p>
               </div>
               <div className="flex items-center">
-                <Image src={tab.image} alt="" width="300" height="300"></Image>
+                <Image
+                  src={tab.image}
+                  alt={`${tab.title} feature illustration`}
+                  width="300"
+                  height="300"
+                ></Image>
               </div>
             </div>
           </TabsContent>

@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: [
+          'var(--font-sans)',
           '-apple-system',
           'BlinkMacSystemFont',
           'Segoe UI',
@@ -25,6 +26,7 @@ const config: Config = {
           'Segoe UI Symbol',
           'Noto Color Emoji',
         ],
+        heading: ['var(--font-heading)', 'serif'],
       },
       backgroundImage: {
         'smooth-text-underline': "url('/smooth-line.svg')",

@@ -44,7 +44,7 @@ export const Default: Story = {
   render: (args) => {
     const child =
       args.asChild && typeof args.children === 'string' ? (
-        <a href="#" onClick={(e) => e.preventDefault()}>
+        <a href="/" onClick={(e) => e.preventDefault()}>
           {args.children}
         </a>
       ) : (
